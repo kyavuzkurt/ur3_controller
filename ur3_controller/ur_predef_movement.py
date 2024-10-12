@@ -9,7 +9,7 @@ import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
 
-from ament_index_python.packages import get_package_share_directory  # Import added
+from ament_index_python.packages import get_package_share_directory 
 from builtin_interfaces.msg import Duration
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from control_msgs.action import FollowJointTrajectory
