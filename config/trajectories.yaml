@@ -1,0 +1,23 @@
+traj0:
+  - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocities: [0, 0, 0, 0, 0, 0]
+    time_from_start:
+      sec: 4
+      nanosec: 0
+  - positions: [0.0, 0.0, 0.0, 0.5, 0.5, 0.0]
+    velocities: [0, 0, 0, 0, 0, 0]
+    time_from_start:
+      sec: 8
+      nanosec: 0
+
+traj1:
+  - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocities: [0, 0, 0, 0, 0, 0]
+    time_from_start:
+      sec: 4
+      nanosec: 0
+  - positions: [0.0, 0.0, 0.0, 0.5, 0.5, 0.0]
+    velocities: [0, 0, 0, 0, 0, 0]
+    time_from_start:
+      sec: 8
+      nanosec: 0

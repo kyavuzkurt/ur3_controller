@@ -1,0 +1,31 @@
+# ROS 2 build directories
+build/
+install/
+log/
+
+# ROS 2 generated directories
+.ament
+.install
+
+# C++ build artifacts
+*.o
+*.a
+*.so
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other generated files
+*.log
+
+# General temporary files
+*.tmp
+*.temp
+
