@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import find_packages, setup
 
 package_name = 'ur3_controller'
@@ -10,8 +12,10 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/config', ['config/*.yaml']),
-        ('share/' + package_name + '/launch', ['launch/*.launch.py']),
+        (os.path.join('share', package_name, 'config'),
+            glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'launch'),
+            glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -22,7 +26,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ur_predefined_movement = ur3_controller.ur_predefined_movement:main',
+            'ur_predefined_movement = ur3_controller.ur_predef_movement:main',
         ],
     },
 )
